@@ -1,0 +1,111 @@
+.detail{
+    padding-top: 46px;
+    padding-bottom: 70px;
+    background-color: #efefef;
+    
+    .van-icon-arrow-left,
+    .van-nav-bar__text{
+        color: black;
+    }
+
+    .detailInfo{
+        width: 355px;
+        background-color:  white;
+        margin: 0 auto;
+        margin-top: -22px;
+        padding: 20px 25px 0;
+        box-sizing: border-box;
+        border-radius: 10px 10px 0 0;
+        position: relative;
+        color: #666;
+
+        .title{
+            height: 30px;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .enname{
+            font-size: 14px;
+        }
+
+        .price{
+            color: #0b34ba;
+        }
+    }
+
+    // 商品规格
+    .Specifications{
+        padding: 15px 0 20px;
+        border-bottom: 1px solid #ddd;
+    }
+    .Specifications-item{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+
+        .title{
+            width: 32px;
+            margin-right: 30px;
+            font-size: 16px;
+        }
+        .btns{
+            display: flex;
+            align-items: center;
+        }
+        .btn-item{
+            width: 62px;
+            height: 27px;
+            margin-right: 10px;
+            background-color: #ddd;
+            border-radius: 12.5px;
+            text-align: center;
+            line-height: 27px;
+            font-size: 14px;
+            &.active{
+                background-color:  #0b34ba;
+                color: white;
+            }
+        }
+
+    }
+
+    // 商品数量
+    .number{
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+
+        >div:first-of-type{
+            font-size: 16px;
+        }
+
+        .van-stepper--round .van-stepper__plus{
+            background-color: #0b34ba;
+        }
+
+        .van-stepper--round .van-stepper__minus{
+            color: #0b34ba;
+            border-color: #0b34ba;
+        }
+    }
+
+    // 商品描述
+    .describe{
+        padding: 20px 0;
+
+        .top{
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .item{
+            margin-bottom: 8px;
+        }
+    }
+    
+
+}

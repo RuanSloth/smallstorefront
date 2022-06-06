@@ -1,0 +1,13 @@
+.hide{
+
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    /*
+    覆盖掉tabbar
+    让tabbar隐藏
+     */
+    z-index: 5;
+    position: absolute;
+
+}

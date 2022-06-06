@@ -1,30 +1,27 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+
+<!--  <router-view v-slot="{ Component }" >-->
+
+<!--    &lt;!&ndash;    缓存，使得下滑后，切换到其他页面，再回来，还是相同位置,暂时没写要缓存的组件进去&ndash;&gt;-->
+<!--      <keep-alive exclude="Cart">-->
+<!--        <component :is="Component" />-->
+<!--      </keep-alive>-->
+
+<!--  </router-view>-->
+<router-view></router-view>
+  <tabbar v-if="this.$route.meta.showTabbar"></tabbar>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<style>
+@import "assets/css/common/base.css";
+</style>
+<script>
 
-nav {
-  padding: 30px;
+import Tabbar from "@/components/tabbar/Tabbar";
+export default {
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  components: {
+    Tabbar
   }
 }
-</style>
+</script>
